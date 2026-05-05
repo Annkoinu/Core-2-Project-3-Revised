@@ -7169,3 +7169,92 @@ body {
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
   }
 }
+
+
+/* Restore the language page content to the visual center of the screen */
+#lang {
+  justify-content: center !important;
+  padding-top: clamp(8px, 2vh, 18px);
+  padding-bottom: clamp(8px, 2vh, 18px);
+}
+
+#lang .lang-top-nav {
+  margin-top: 0 !important;
+  flex: 0 0 auto !important;
+  justify-content: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 12px !important;
+}
+
+#lang .lang-title-block {
+  max-width: min(100%, 640px);
+  margin: 0 auto !important;
+}
+
+#lang .scroll {
+  flex: 0 1 auto !important;
+  overflow: visible !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#lang .list {
+  max-width: 640px;
+  margin: 0 auto !important;
+}
+
+#lang .cta-area {
+  flex: 0 0 auto !important;
+  margin-top: 18px !important;
+  padding-top: 0 !important;
+}
+
+@media (min-width: 900px) {
+  #lang {
+    justify-content: center !important;
+  }
+}
+
+@media (max-height: 760px) {
+  #lang {
+    justify-content: center !important;
+  }
+
+  #lang .scroll {
+    overflow: auto !important;
+  }
+}
+
+
+/* Language page: center only the greeting/header + language choices, keep bottom button down */
+#lang {
+  justify-content: stretch !important;
+}
+
+#lang .lang-top-nav {
+  margin-top: auto !important;
+  flex: 0 0 auto !important;
+  justify-content: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 12px !important;
+}
+
+#lang .scroll {
+  flex: 0 1 auto !important;
+  overflow: visible !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#lang .cta-area {
+  flex: 0 0 auto !important;
+  margin-top: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
+}
+
+@media (max-height: 760px) {
+  #lang .scroll {
+    overflow: auto !important;
+  }
+}
