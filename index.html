@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>CrossSign — Responsive Demo</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="page-shell">
+<div aria-label="CrossSign app prototype" class="app-surface">
+<section class="screen gradient sign-demo-screen" data-screen="" hidden="" id="sign-demo">
+<div class="center sign-demo-center">
+<div class="sign-demo-panel">
+<div class="sign-demo-video">
+<button aria-label="Preview sign" class="play-button" type="button">
+<span class="material-symbols-rounded play-triangle">play_arrow</span>
+</button>
+<span class="sign-demo-caption">ASL — WHEN USING, TAP THIS YELLOW BUTTON TO SEE SIGN
+                  LANGUAGE</span>
+</div>
+<p class="sign-demo-text">
+                When using, tap this yellow button to see sign language.
+              </p>
+<button aria-label="When using, tap this yellow button to see sign language" class="sentence-play-btn sign-demo-example-btn" data-assist="When using, tap this yellow button to see sign language.">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</div>
+</div>
+<div class="cta-area">
+<button class="btn" data-go="welcome">
+<span class="material-symbols-rounded inline-icon">thumb_up</span>
+              OK!
+            </button>
+</div>
+</section>
+<section class="screen gradient" data-screen="" hidden="" id="welcome">
+<div class="center">
+<div class="logo-card">
+<span aria-hidden="true" class="logo-accent logo-accent-yellow"></span>
+<span aria-hidden="true" class="logo-accent logo-accent-pink"></span>
+<span aria-hidden="true" class="logo-accent logo-accent-blue"></span>
+<div class="handmark">
+<span class="material-symbols-rounded">sign_language</span>
+</div>
+</div>
+<div class="kicker">CrossSign</div>
+<h1 class="intro-assist-title">
+              A bridge for everyone.<button aria-label="Play sign for A bridge for everyone" class="sentence-play-btn setup-assist-btn" data-assist="A bridge for everyone.">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</h1>
+<p class="intro-subtitle">
+              Communicate across sign, written, or spoken
+              languages and across people.<button aria-label="Play sign for Communicate across sign, written, or spoken languages and across people" class="sentence-play-btn subtitle-assist-btn" data-assist="Communicate across sign, written, or spoken languages and across people.">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</p>
+</div>
+<div class="cta-area">
+<button class="btn" data-go="home">
+              Start!
+              <span class="material-symbols-rounded inline-icon">chevron_right</span>
+</button>
+</div>
+</section>
+<section class="screen" data-screen="" id="lang">
+<div class="top-nav lang-top-nav">
+<div class="nav-title lang-title-block">
+<div class="kicker home-greeting lang-hello">Hello!</div>
+<strong>Choose your language. You can change it later!<button aria-label="Play sign for Choose your language. You can change it later!" class="sentence-play-btn setup-assist-btn" data-assist="Choose your language. You can change it later!">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+</div>
+<div class="scroll">
+<div class="list">
+<button class="option" data-lang="zh">
+<img alt="China flag" class="flag flag-img" src="flags/China.png"/><span class="choice-desc"><strong>中文</strong><small>Chinese · CSL</small></span><span class="check"></span>
+</button>
+<button class="option active" data-lang="en-US">
+<img alt="United States flag" class="flag flag-img" src="flags/America.png"/><span class="choice-desc"><strong>English</strong><small>United States · ASL</small></span><span class="check"><span class="material-symbols-rounded">check</span></span>
+</button>
+<button class="option" data-lang="en-GB">
+<img alt="United Kingdom flag" class="flag flag-img" src="flags/England.png"/><span class="choice-desc"><strong>English</strong><small>United Kingdom · BSL</small></span><span class="check"></span>
+</button>
+<button class="option" data-lang="ja">
+<img alt="Japan flag" class="flag flag-img" src="flags/Japan.png"/><span class="choice-desc"><strong>日本語</strong><small>Japanese · JSL</small></span><span class="check"></span>
+</button>
+<button class="option" data-lang="fr">
+<img alt="France flag" class="flag flag-img" src="flags/France.png"/><span class="choice-desc"><strong>Français</strong><small>French · LSF</small></span><span class="check"></span>
+</button>
+<button class="option" data-lang="es">
+<img alt="Spain flag" class="flag flag-img" src="flags/Spain.png"/><span class="choice-desc"><strong>Español</strong><small>Spanish · LSE</small></span><span class="check"></span>
+</button>
+</div>
+</div>
+<div class="cta-area">
+<button class="btn" data-go="sign-demo">
+<span class="material-symbols-rounded inline-icon">check</span>
+              Done!
+            </button>
+</div>
+</section>
+<section class="screen" data-screen="" hidden="" id="home">
+<div class="home-head">
+<div class="brand">
+<div class="brand-mark">
+<span class="material-symbols-rounded">sign_language</span>
+</div>
+<div>
+<div class="brand-title">CrossSign</div>
+</div>
+</div>
+</div>
+<div class="scroll">
+<div style="margin-bottom: 18px">
+<div class="kicker home-greeting" style="color: var(--ink-3); margin-bottom: 6px">
+                Hi Val
+                <span class="material-symbols-rounded inline-icon hello-icon">waving_hand</span>
+</div>
+<h1 class="sentence-assist-title" style="font-size: 28px">
+                What would you like to do today?<button aria-label="Play sign for What would you like to do today?" class="sentence-play-btn" data-assist="What would you like to do today?">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</h1>
+</div>
+<div class="card-grid">
+<button class="card-btn home-help-card" data-go="help" style="background: var(--primary-soft); color: var(--primary-deep)">
+<span class="icon material-symbols-rounded">call</span><span><strong>Help</strong></span>
+</button>
+<button class="card-btn" data-go="translator" style="background: var(--peach-soft); color: #7e4f2c">
+<span class="icon material-symbols-rounded">translate</span><span><strong>Translator</strong></span>
+</button>
+<button class="card-btn" data-go="learn" style="background: var(--lavender-soft); color: #5b4774">
+<span class="icon material-symbols-rounded">school</span><span><strong>Learn</strong></span>
+</button>
+<button class="card-btn" data-go="profile" style="background: var(--sky-soft); color: #3f6379">
+<span class="icon material-symbols-rounded">person</span><span><strong>Profile</strong></span>
+</button>
+</div>
+<div class="section-head">
+<strong>Quick phrases<button aria-label="Play sign for Quick phrases" class="sentence-play-btn setup-assist-btn section-assist-btn" data-assist="Quick phrases">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+<div class="card-grid quick-phrases-grid">
+<button class="option quick-phrase-option" data-assist="I need help" style="display: block; text-align: center">
+<span class="flag material-symbols-rounded">pan_tool</span><strong style="font-size: 13px; margin-top: 6px">I need help</strong><span class="quick-phrase-play material-symbols-rounded">play_arrow</span></button><button class="option quick-phrase-option" data-assist="I use sign language" style="display: block; text-align: center">
+<span class="flag material-symbols-rounded">sign_language</span><strong style="font-size: 13px; margin-top: 6px">I use sign language</strong><span class="quick-phrase-play material-symbols-rounded">play_arrow</span></button><button class="option quick-phrase-option" data-assist="Please type" style="display: block; text-align: center">
+<span class="flag material-symbols-rounded">keyboard</span><strong style="font-size: 13px; margin-top: 6px">Please type</strong><span class="quick-phrase-play material-symbols-rounded">play_arrow</span></button><button class="option quick-phrase-option" data-assist="I don't understand" style="display: block; text-align: center">
+<span class="flag material-symbols-rounded">help_center</span><strong style="font-size: 13px; margin-top: 6px">I don't understand</strong><span class="quick-phrase-play material-symbols-rounded">play_arrow</span>
+</button>
+</div>
+<div class="helper-apply-card">
+<div class="helper-apply-icon">
+<span class="material-symbols-rounded">volunteer_activism</span>
+</div>
+<div class="helper-apply-text">
+<strong>Become a helper</strong>
+</div>
+<button class="helper-apply-btn" type="button">
+<span class="material-symbols-rounded">arrow_forward</span>
+</button>
+</div>
+</div>
+<nav class="tabs"><button class="tab" data-go="help"><span class="material-symbols-rounded">call</span><span>Help</span></button><button class="tab" data-go="translator"><span class="material-symbols-rounded">translate</span><span>Translate</span></button><button class="tab active" data-go="home"><span class="material-symbols-rounded">home</span><span>Home</span></button><button class="tab" data-go="learn"><span class="material-symbols-rounded">school</span><span>Learn</span></button><button class="tab" data-go="profile"><span class="material-symbols-rounded">person</span><span>Profile</span></button></nav>
+</section>
+<section class="screen" data-screen="" hidden="" id="help">
+<div class="top-nav">
+<button class="icon-btn" data-go="home">
+<span class="material-symbols-rounded">chevron_left</span>
+</button>
+<div class="nav-title">
+<strong>Help<button aria-label="Play sign for Help" class="sentence-play-btn setup-assist-btn" data-assist="Help">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+</div>
+<div class="scroll">
+<div class="hero-panel">
+<div class="hero-icon">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<h2>Need help with communication?</h2>
+<p style="font-size: 13px">
+                Connect with a helper who can support communication
+                between sign language, speech, and text.
+              </p>
+<button class="btn" data-go="livebridge">
+<span class="material-symbols-rounded inline-icon">call</span>
+                Call!
+              </button>
+</div>
+<div aria-label="Available helper filters and helper list" class="helper-layout">
+<aside class="helper-filter-panel">
+<div class="helper-filter-title">
+                  Filter<button aria-label="Play sign for Filter" class="sentence-play-btn setup-assist-btn section-assist-btn" data-assist="Filter">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</div>
+<div aria-label="Filter helpers by language and mode" class="helper-filter">
+<button class="helper-filter-chip" data-helper-filter="ASL_SIGN" type="button">
+<img alt="ASL flag" src="circleflags/America.png"/><span>ASL</span><span class="helper-filter-mode"><span class="material-symbols-rounded">sign_language</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="EN_TEXT" type="button">
+<img alt="English flag" src="circleflags/America.png"/><span>English</span><span class="helper-filter-mode"><span class="material-symbols-rounded">text_fields</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="CSL_SIGN" type="button">
+<img alt="CSL flag" src="circleflags/China.png"/><span>CSL</span><span class="helper-filter-mode"><span class="material-symbols-rounded">sign_language</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="ZH_TEXT" type="button">
+<img alt="Chinese flag" src="circleflags/China.png"/><span>Chinese</span><span class="helper-filter-mode"><span class="material-symbols-rounded">text_fields</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="JSL_SIGN" type="button">
+<img alt="JSL flag" src="circleflags/Japan.png"/><span>JSL</span><span class="helper-filter-mode"><span class="material-symbols-rounded">sign_language</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="JA_TEXT" type="button">
+<img alt="Japanese flag" src="circleflags/Japan.png"/><span>Japanese</span><span class="helper-filter-mode"><span class="material-symbols-rounded">text_fields</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="BSL_SIGN" type="button">
+<img alt="BSL flag" src="circleflags/England.png"/><span>BSL</span><span class="helper-filter-mode"><span class="material-symbols-rounded">sign_language</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="FR_TEXT" type="button">
+<img alt="French flag" src="circleflags/France.png"/><span>French</span><span class="helper-filter-mode"><span class="material-symbols-rounded">text_fields</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="LSE_SIGN" type="button">
+<img alt="LSE flag" src="circleflags/Spain.png"/><span>LSE</span><span class="helper-filter-mode"><span class="material-symbols-rounded">sign_language</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+<button class="helper-filter-chip" data-helper-filter="ES_TEXT" type="button">
+<img alt="Spanish flag" src="circleflags/Spain.png"/><span>Spanish</span><span class="helper-filter-mode"><span class="material-symbols-rounded">text_fields</span></span><span class="helper-filter-check material-symbols-rounded">check_box_outline_blank</span>
+</button>
+</div>
+</aside>
+<div class="helper-list-panel">
+<div class="section-head helper-list-head">
+<strong>Available helpers<button aria-label="Play sign for Available helpers" class="sentence-play-btn setup-assist-btn section-assist-btn" data-assist="Available helpers">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong><small><span aria-hidden="true" class="connected-dot"></span></small>
+</div>
+<div class="row helper-row" data-helper-languages="ASL_SIGN EN_TEXT">
+<div class="row-icon" style="background: var(--primary-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Ari</strong><small>ASL · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="CSL_SIGN ZH_TEXT EN_TEXT">
+<div class="row-icon" style="background: var(--peach-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Ken</strong><small>CSL · Chinese · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="JSL_SIGN JA_TEXT EN_TEXT">
+<div class="row-icon" style="background: var(--lavender-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Yuna</strong><small>JSL · Japanese · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="ASL_SIGN ES_TEXT LSE_SIGN">
+<div class="row-icon" style="background: var(--sky-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Mateo</strong><small>ASL · Spanish · LSE</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="BSL_SIGN EN_TEXT FR_TEXT">
+<div class="row-icon" style="background: var(--sun-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Amelia</strong><small>BSL · English · French</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="CSL_SIGN ASL_SIGN ZH_TEXT EN_TEXT">
+<div class="row-icon" style="background: var(--primary-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Lin</strong><small>CSL · ASL · Chinese · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="LSE_SIGN ES_TEXT EN_TEXT">
+<div class="row-icon" style="background: var(--peach-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Sofia</strong><small>LSE · Spanish · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-row" data-helper-languages="JSL_SIGN ASL_SIGN JA_TEXT EN_TEXT">
+<div class="row-icon" style="background: var(--lavender-soft)">
+<span class="material-symbols-rounded">support_agent</span>
+</div>
+<div class="row-text">
+<strong>Riku</strong><small>JSL · ASL · Japanese · English</small>
+</div>
+<span class="material-symbols-rounded row-arrow">chevron_right</span>
+</div>
+<div class="row helper-empty-row" hidden="">
+<div class="row-icon playful-empty-icon">
+<span class="material-symbols-rounded">travel_explore</span>
+</div>
+<div class="row-text">
+<strong>Hmm, no helpers match this filter</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="tabs"><button class="tab active" data-go="help"><span class="material-symbols-rounded">call</span><span>Help</span></button><button class="tab" data-go="translator"><span class="material-symbols-rounded">translate</span><span>Translate</span></button><button class="tab" data-go="home"><span class="material-symbols-rounded">home</span><span>Home</span></button><button class="tab" data-go="learn"><span class="material-symbols-rounded">school</span><span>Learn</span></button><button class="tab" data-go="profile"><span class="material-symbols-rounded">person</span><span>Profile</span></button></nav>
+</section>
+<section class="live-screen screen" data-screen="" hidden="" id="livebridge">
+<div class="live-connected-header">
+<strong><span aria-hidden="true" class="connected-dot"></span>Helper
+              connected<button aria-label="Play sign for Helper connected" class="sentence-play-btn setup-assist-btn live-title-assist" data-assist="Helper connected">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+<div class="video-area">
+<div style="text-align: center">
+<div style="font-size: 56px">
+<span class="material-symbols-rounded live-hand-icon">support_agent</span>
+</div>
+<h2>Helper</h2>
+<p>Live video area</p>
+</div>
+<div style="
+                position: absolute;
+                right: 14px;
+                bottom: 14px;
+                width: 110px;
+                height: 150px;
+                border-radius: 20px;
+                background: #111;
+                display: grid;
+                place-items: center;
+                border: 2px solid rgba(255, 255, 255, 0.25);
+              ">
+              You
+            </div>
+</div>
+<div class="call-controls">
+<button class="call-btn">
+<span class="material-symbols-rounded">mic</span></button><button class="call-btn">
+<span class="material-symbols-rounded">volume_up</span></button><button class="call-btn">
+<span class="material-symbols-rounded">videocam</span></button><button class="call-btn end" data-go="help">
+<span class="material-symbols-rounded">call_end</span>
+</button>
+</div>
+</section>
+<section class="screen" data-screen="" hidden="" id="translator">
+<div class="top-nav">
+<div class="nav-title">
+<strong>Translator<button aria-label="Play sign for Translator" class="sentence-play-btn setup-assist-btn" data-assist="Translator">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+</div>
+<div class="scroll translator-scroll">
+<div class="panel translator-panel">
+<div aria-label="Translation language controls" class="translator-language-bar">
+<div class="custom-dropdown custom-dropdown-from" data-dropdown="from">
+<button aria-expanded="false" aria-haspopup="listbox" class="dropdown-trigger" id="translate-from-trigger" type="button">
+<span data-value="EN · Text" id="translate-from-value"><span class="lang-value-wrap compact"><img alt="English flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">English</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span></span>
+<span class="material-symbols-rounded lang-caret">expand_more</span>
+</button>
+<div class="dropdown-menu" hidden="" id="translate-from-menu" role="listbox">
+<button aria-selected="true" class="dropdown-option active" data-target="from" data-value="EN · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="English flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">English</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="ZH · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Chinese flag" class="lang-flag" src="circleflags/China.png"/><span class="lang-name">Chinese</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="JA · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Japanese flag" class="lang-flag" src="circleflags/Japan.png"/><span class="lang-name">Japanese</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="ES · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Spanish flag" class="lang-flag" src="circleflags/Spain.png"/><span class="lang-name">Spanish</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="ASL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="ASL flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">ASL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="CSL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="CSL flag" class="lang-flag" src="circleflags/China.png"/><span class="lang-name">CSL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="from" data-value="JSL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="JSL flag" class="lang-flag" src="circleflags/Japan.png"/><span class="lang-name">JSL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+</div>
+</div>
+<button aria-label="Swap languages" class="swap-ring" id="swap-languages" type="button">
+<span class="material-symbols-rounded">sync_alt</span>
+</button>
+<div class="custom-dropdown custom-dropdown-to" data-dropdown="to">
+<button aria-expanded="false" aria-haspopup="listbox" class="dropdown-trigger" id="translate-to-trigger" type="button">
+<span data-value="ASL · Sign" id="translate-to-value"><span class="lang-value-wrap compact"><img alt="ASL flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">ASL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span></span>
+<span class="material-symbols-rounded lang-caret">expand_more</span>
+</button>
+<div class="dropdown-menu" hidden="" id="translate-to-menu" role="listbox">
+<button aria-selected="true" class="dropdown-option active" data-target="to" data-value="ASL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="ASL flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">ASL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="CSL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="CSL flag" class="lang-flag" src="circleflags/China.png"/><span class="lang-name">CSL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="JSL · Sign" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="JSL flag" class="lang-flag" src="circleflags/Japan.png"/><span class="lang-name">JSL</span><span class="lang-mode-text">Sign</span><span class="material-symbols-rounded lang-mode-icon">sign_language</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="EN · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="English flag" class="lang-flag" src="circleflags/America.png"/><span class="lang-name">English</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="ZH · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Chinese flag" class="lang-flag" src="circleflags/China.png"/><span class="lang-name">Chinese</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="JA · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Japanese flag" class="lang-flag" src="circleflags/Japan.png"/><span class="lang-name">Japanese</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+<button aria-selected="false" class="dropdown-option" data-target="to" data-value="ES · Text" role="option" type="button">
+<span class="checkmark material-symbols-rounded">check</span><span class="lang-value-wrap"><img alt="Spanish flag" class="lang-flag" src="circleflags/Spain.png"/><span class="lang-name">Spanish</span><span class="lang-mode-text">Text</span><span class="material-symbols-rounded lang-mode-icon">text_fields</span></span>
+</button>
+</div>
+</div>
+</div>
+<div id="translation-input-area"></div>
+<div class="down-arrow">
+<span class="material-symbols-rounded">arrow_downward</span>
+</div>
+<div id="translation-output-area"></div>
+</div>
+</div>
+<nav class="tabs"><button class="tab" data-go="help"><span class="material-symbols-rounded">call</span><span>Help</span></button><button class="tab active" data-go="translator"><span class="material-symbols-rounded">translate</span><span>Translate</span></button><button class="tab" data-go="home"><span class="material-symbols-rounded">home</span><span>Home</span></button><button class="tab" data-go="learn"><span class="material-symbols-rounded">school</span><span>Learn</span></button><button class="tab" data-go="profile"><span class="material-symbols-rounded">person</span><span>Profile</span></button></nav>
+</section>
+<section class="screen" data-screen="" hidden="" id="learn">
+<div class="home-head learn-head">
+<div>
+<div class="learn-title">
+                Learn<button aria-label="Play sign for Learn" class="sentence-play-btn setup-assist-btn" data-assist="Learn">
+<span class="material-symbols-rounded">question_mark</span>
+</button>
+</div>
+</div>
+<div class="learn-stats">
+<span class="learn-stat learn-stat-xp"><span class="material-symbols-rounded">star</span><strong>240</strong> <small>XP</small></span>
+<span class="learn-stat learn-stat-streak"><span class="material-symbols-rounded">local_fire_department</span><strong>7</strong> <small>day streak</small></span>
+</div>
+<div aria-label="Learn language controls" class="learn-language-flow">
+<div class="learn-by-select" data-learn-by-dropdown="">
+<button aria-expanded="false" aria-haspopup="listbox" class="learn-by-trigger" type="button">
+<img alt="English flag" src="circleflags/America.png"/>
+<span class="learn-language-label">English</span>
+<span class="material-symbols-rounded learn-mode-icon">text_fields</span>
+<span class="material-symbols-rounded learn-caret">expand_more</span>
+</button>
+<div class="learn-by-menu" hidden="" role="listbox">
+<button class="learn-by-option active" data-by="English" data-flag="circleflags/America.png" data-icon="text_fields" type="button">
+<img alt="English flag" src="circleflags/America.png"/><span>English</span><span class="material-symbols-rounded learn-option-mode">text_fields</span>
+</button>
+<button class="learn-by-option" data-by="Chinese" data-flag="circleflags/China.png" data-icon="text_fields" type="button">
+<img alt="Chinese flag" src="circleflags/China.png"/><span>Chinese</span><span class="material-symbols-rounded learn-option-mode">text_fields</span>
+</button>
+<button class="learn-by-option" data-by="Japanese" data-flag="circleflags/Japan.png" data-icon="text_fields" type="button">
+<img alt="Japanese flag" src="circleflags/Japan.png"/><span>Japanese</span><span class="material-symbols-rounded learn-option-mode">text_fields</span>
+</button>
+<button class="learn-by-option" data-by="Spanish" data-flag="circleflags/Spain.png" data-icon="text_fields" type="button">
+<img alt="Spanish flag" src="circleflags/Spain.png"/><span>Spanish</span><span class="material-symbols-rounded learn-option-mode">text_fields</span>
+</button>
+<button class="learn-by-option" data-by="ASL" data-flag="circleflags/America.png" data-icon="sign_language" type="button">
+<img alt="ASL flag" src="circleflags/America.png"/><span>ASL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-by-option" data-by="BSL" data-flag="circleflags/England.png" data-icon="sign_language" type="button">
+<img alt="BSL flag" src="circleflags/England.png"/><span>BSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-by-option" data-by="CSL" data-flag="circleflags/China.png" data-icon="sign_language" type="button">
+<img alt="CSL flag" src="circleflags/China.png"/><span>CSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-by-option" data-by="JSL" data-flag="circleflags/Japan.png" data-icon="sign_language" type="button">
+<img alt="JSL flag" src="circleflags/Japan.png"/><span>JSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-by-option" data-by="LSF" data-flag="circleflags/France.png" data-icon="sign_language" type="button">
+<img alt="LSF flag" src="circleflags/France.png"/><span>LSF</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-by-option" data-by="LSE" data-flag="circleflags/Spain.png" data-icon="sign_language" type="button">
+<img alt="LSE flag" src="circleflags/Spain.png"/><span>LSE</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+</div>
+</div>
+<span aria-hidden="true" class="material-symbols-rounded learn-language-arrow">arrow_forward</span>
+<div class="learn-sign-select" data-learn-sign-dropdown="">
+<button aria-expanded="false" aria-haspopup="listbox" class="learn-sign-trigger" type="button">
+<img alt="ASL flag" src="circleflags/America.png"/>
+<span class="learn-language-label">ASL</span>
+<span class="material-symbols-rounded learn-mode-icon">sign_language</span>
+<span class="material-symbols-rounded learn-caret">expand_more</span>
+</button>
+<div class="learn-sign-menu" hidden="" role="listbox">
+<button class="learn-sign-option active" data-flag="circleflags/America.png" data-sign="ASL" type="button">
+<img alt="ASL flag" src="circleflags/America.png"/><span>ASL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-sign-option" data-flag="circleflags/England.png" data-sign="BSL" type="button">
+<img alt="BSL flag" src="circleflags/England.png"/><span>BSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-sign-option" data-flag="circleflags/China.png" data-sign="CSL" type="button">
+<img alt="CSL flag" src="circleflags/China.png"/><span>CSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-sign-option" data-flag="circleflags/Japan.png" data-sign="JSL" type="button">
+<img alt="JSL flag" src="circleflags/Japan.png"/><span>JSL</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-sign-option" data-flag="circleflags/France.png" data-sign="LSF" type="button">
+<img alt="LSF flag" src="circleflags/France.png"/><span>LSF</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+<button class="learn-sign-option" data-flag="circleflags/Spain.png" data-sign="LSE" type="button">
+<img alt="LSE flag" src="circleflags/Spain.png"/><span>LSE</span><span class="material-symbols-rounded learn-option-mode">sign_language</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="scroll learn-scroll">
+<div class="learn-continue-card">
+<div aria-hidden="true" class="learn-continue-deco">
+<span class="material-symbols-rounded">waving_hand</span>
+</div>
+<div class="learn-continue-kicker">CONTINUE WITH...</div>
+<h2 class="learn-continue-title">Greetings</h2>
+<p class="learn-continue-sub">Lesson 3 · Hello, my name is...</p>
+<div class="learn-continue-bottom">
+<div class="learn-continue-progress-wrap">
+<div class="learn-progress learn-progress-purple">
+<span style="width: 38%"></span>
+</div>
+<div class="learn-continue-count">3 OF 8</div>
+</div>
+<button class="learn-continue-btn" type="button">
+                  Continue
+                  <span class="material-symbols-rounded inline-icon">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="learn-section-heading">Lessons</div>
+<div class="learn-path-card learn-path-card-complete">
+<div class="learn-path-icon learn-path-icon-complete">
+<span class="material-symbols-rounded">abc</span>
+</div>
+<div class="learn-path-text">
+<strong>Alphabet &amp; numbers</strong>
+<div class="learn-progress learn-progress-complete learn-path-progress">
+<span style="width: 100%"></span>
+</div>
+<small>8 OF 8</small>
+</div>
+<div class="learn-path-check">
+<span class="material-symbols-rounded">check_circle</span>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+<div class="learn-path-card">
+<div class="learn-path-icon learn-path-icon-step">
+<span class="material-symbols-rounded">waving_hand</span>
+</div>
+<div class="learn-path-text">
+<strong>Greetings</strong>
+<div class="learn-progress learn-progress-purple learn-path-progress">
+<span style="width: 38%"></span>
+</div>
+<small>3 OF 8</small>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+<div class="learn-path-card">
+<div class="learn-path-icon learn-path-icon-step">
+<span class="material-symbols-rounded">groups</span>
+</div>
+<div class="learn-path-text">
+<strong>Family &amp; people</strong>
+<div class="learn-progress learn-path-progress">
+<span style="width: 0%"></span>
+</div>
+<small>0 OF 8</small>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+<div class="learn-path-card">
+<div class="learn-path-icon learn-path-icon-step">
+<span class="material-symbols-rounded">help</span>
+</div>
+<div class="learn-path-text">
+<strong>Asking questions</strong>
+<div class="learn-progress learn-path-progress">
+<span style="width: 0%"></span>
+</div>
+<small>0 OF 8</small>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+<div class="learn-path-card">
+<div class="learn-path-icon learn-path-icon-step">
+<span class="material-symbols-rounded">partly_cloudy_day</span>
+</div>
+<div class="learn-path-text">
+<strong>Weather</strong>
+<div class="learn-progress learn-path-progress">
+<span style="width: 0%"></span>
+</div>
+<small>0 OF 8</small>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+<div class="learn-path-card">
+<div class="learn-path-icon learn-path-icon-step">
+<span class="material-symbols-rounded">palette</span>
+</div>
+<div class="learn-path-text">
+<strong>Colors</strong>
+<div class="learn-progress learn-path-progress">
+<span style="width: 0%"></span>
+</div>
+<small>0 OF 8</small>
+</div>
+<div class="learn-chevron">
+<span class="material-symbols-rounded">chevron_right</span>
+</div>
+</div>
+</div>
+<nav class="tabs"><button class="tab" data-go="help"><span class="material-symbols-rounded">call</span><span>Help</span></button><button class="tab" data-go="translator"><span class="material-symbols-rounded">translate</span><span>Translate</span></button><button class="tab" data-go="home"><span class="material-symbols-rounded">home</span><span>Home</span></button><button class="tab active" data-go="learn"><span class="material-symbols-rounded">school</span><span>Learn</span></button><button class="tab" data-go="profile"><span class="material-symbols-rounded">person</span><span>Profile</span></button></nav>
+</section>
+<section class="screen" data-screen="" hidden="" id="profile">
+<div class="top-nav">
+<div class="nav-title">
+<strong>Profile<button aria-label="Play sign for Profile" class="sentence-play-btn setup-assist-btn" data-assist="Profile">
+<span class="material-symbols-rounded">question_mark</span>
+</button></strong>
+</div>
+</div>
+<div class="scroll profile-scroll">
+<div class="profile-hero">
+<div class="profile-hero-avatar">V</div>
+<div class="profile-hero-info">
+<h2>Val</h2>
+<p>(000) 000 0000</p>
+</div>
+</div>
+<div class="profile-settings-group">
+<div class="profile-settings-row">
+<div class="profile-row-left">
+<div class="profile-row-icon">
+<img alt="English flag" src="circleflags/America.png"/>
+</div>
+<div class="profile-row-text">
+<strong>App Language</strong>
+</div>
+</div>
+<div class="profile-row-right">
+<span class="profile-row-value">English (US)</span><span class="material-symbols-rounded profile-row-arrow">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="profile-section-label">Saved</div>
+<div class="profile-settings-group saved-videos-group" id="saved-videos-list">
+<div class="profile-settings-row saved-empty-row">
+<div class="profile-row-left">
+<div class="profile-row-icon">
+<span class="material-symbols-rounded">bookmark</span>
+</div>
+<div class="profile-row-text">
+<strong>No saved signs yet</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="tabs"><button class="tab" data-go="help"><span class="material-symbols-rounded">call</span><span>Help</span></button><button class="tab" data-go="translator"><span class="material-symbols-rounded">translate</span><span>Translate</span></button><button class="tab" data-go="home"><span class="material-symbols-rounded">home</span><span>Home</span></button><button class="tab" data-go="learn"><span class="material-symbols-rounded">school</span><span>Learn</span></button><button class="tab active" data-go="profile"><span class="material-symbols-rounded">person</span><span>Profile</span></button></nav>
+</section>
+<div class="assist-backdrop" hidden="" id="assist-popover">
+<div aria-labelledby="assist-title" aria-modal="true" class="assist-card" role="dialog">
+<div aria-hidden="true" class="assist-notch"></div>
+<button aria-label="Close" class="assist-close">
+<span class="material-symbols-rounded">close</span>
+</button>
+<h2 class="assist-title" id="assist-title">
+              What would you like to do today?
+            </h2>
+<div class="assist-video-frame sign-video">
+<button aria-label="Play sign preview" class="play-button" type="button">
+<span class="material-symbols-rounded play-triangle">play_arrow</span>
+</button>
+<span class="assist-caption" id="assist-video">ASL — WHAT WOULD YOU LIKE TO DO TODAY?</span>
+</div>
+<div class="assist-actions">
+<button class="assist-pill" data-toggle-control="slow" type="button">
+<span class="material-symbols-rounded pill-icon">slow_motion_video</span><span>Slow</span>
+</button>
+<button class="assist-pill" data-toggle-control="loop" type="button">
+<span class="material-symbols-rounded pill-icon">repeat</span><span>Loop</span>
+</button>
+<button class="assist-pill" data-toggle-control="save" type="button">
+<span class="material-symbols-rounded pill-icon">bookmark</span><span>Save</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
